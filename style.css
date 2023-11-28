@@ -1,0 +1,87 @@
+    * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    }
+
+    body {
+    padding: 0 30px;
+    }
+
+    navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    }
+
+    navbar ul {
+    display: none;
+    }
+
+    navbar ul.show {
+    padding: 15px 25px;
+    border-radius: 10px 0px 10px 10px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    background-color: aqua;
+    }
+
+    navbar ul.show a {
+        color: black;
+        /* border-bottom: 1px solid grey; */
+        font-weight: 700;
+    }
+
+    .hero {
+        animation: mymove 20s infinite backwards;
+        border-radius: 10px;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textHero {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .btn{
+        padding: 10px;
+        cursor: pointer;
+        background-color: aqua;
+        border-radius: 5px;
+        box-shadow: 6px 4px rgb(42, 41, 41);
+        /* box-shadow: rgba(red, green, blue, alpha); */
+    }
+    .btn:hover {
+        box-shadow: 3px 2px rgb(42, 41, 41);
+    }
+
+    @keyframes mymove {
+  0%   {background-image: url(./img/bg1.jpg); background-size: cover;}
+  50%  {background-image: url(https://source.unsplash.com/1920x1080); background-size: cover;}
+  100%  {background-image: url(./img/bg1.jpg); background-size: cover;}
+}
+
+    @media (min-width: 568px) {
+    navbar ul {
+        display: flex;
+        gap: 20px;
+    }
+    navbar ul a {
+        font-weight: 600;
+        color: black;
+    }
+
+    navbar .btnMenu {
+        display: none;
+    }
+}

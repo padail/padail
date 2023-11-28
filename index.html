@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNUP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f2c026254b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <navbar class="container">
+        <h2>pada</h2>
+        <span>
+            <i class="fa-solid fa-bars btnMenu"></i>
+        </span>
+        <ul class="navMenu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </navbar>
+    <section id="hero" class="container hero">
+        <div class="textHero">
+            <h1>Welcom to my Website</h1>
+            <button class="btn">More</button>
+        </div>
+    </section>
+
+
+    <script>
+        const btnMenu = document.querySelector('.btnMenu');
+        const navMenu = document.querySelector('.navMenu');
+        btnMenu.addEventListener('click',()=>{
+            navMenu.classList.toggle('show');
+        })
+        
+    </script>
+</body>
+</html>
